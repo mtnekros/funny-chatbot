@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "general-llm"
+version = "0.1.0"
+description = ""
+authors = ["Diwash Tamang <mtnekros@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.3.7"
+langchain-community = "^0.3.5"
+langchain-ollama = "^0.2.0"
+streamlit = "^1.39.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pyright]
+# Specify source folders
+include = ["."]
+
+# You can also add other configurations as needed
+exclude = ["tests"]
+
+[tool.ruff]
+# Specify source folders
+include = ["."]           # Specify the source folder
